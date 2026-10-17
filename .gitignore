@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+models/
+checkpoints/
+*.safetensors
+*.bin
+data/raw/
+# cleaned splits are rebuilt by src/data.py in seconds
+data/processed/
+report/
+*.docx

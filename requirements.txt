@@ -1,0 +1,17 @@
+# data baselines and plotting
+pandas
+numpy
+scikit-learn
+matplotlib
+
+# transformer fine tuning
+# colab already has torch pip skips it there
+torch
+transformers>=4.40,<5
+accelerate>=0.30
+datasets>=2.18
+sentencepiece
+protobuf
+
+# deployment only not needed to train
+gradio>=4.0
