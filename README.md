@@ -7,7 +7,7 @@ compares simple word count models against a fine tuned transformer
 |---|---|
 | live app | https://sentikinyarwanda.streamlit.app |
 | model | https://huggingface.co/mbonikevin/afroxlmr-kinyarwanda-sentiment |
-| demo video | link |
+| demo video | https://youtu.be/mlgyqByPKlg |
 
 ## why
 
