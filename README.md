@@ -3,6 +3,7 @@
 sorts kinyarwanda tweets into positive neutral or negative
 compares simple word count models against a fine tuned transformer
 
+| item | URL |
 |---|---|
 | live app | https://sentikinyarwanda.streamlit.app |
 | model | https://huggingface.co/mbonikevin/afroxlmr-kinyarwanda-sentiment |
