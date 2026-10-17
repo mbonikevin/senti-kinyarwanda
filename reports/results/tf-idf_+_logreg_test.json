@@ -1,0 +1,64 @@
+{
+  "model_name": "TF-IDF + LogReg",
+  "split": "test",
+  "accuracy": 0.5984405458089669,
+  "macro_f1": 0.6016842141408874,
+  "macro_precision": 0.6014213798493158,
+  "macro_recall": 0.6022463310933879,
+  "weighted_f1": 0.5981445120836837,
+  "per_class_report": {
+    "positive": {
+      "precision": 0.631768953068592,
+      "recall": 0.6294964028776978,
+      "f1-score": 0.6306306306306306,
+      "support": 278.0
+    },
+    "neutral": {
+      "precision": 0.575197889182058,
+      "recall": 0.55470737913486,
+      "f1-score": 0.5647668393782384,
+      "support": 393.0
+    },
+    "negative": {
+      "precision": 0.5972972972972973,
+      "recall": 0.6225352112676056,
+      "f1-score": 0.6096551724137931,
+      "support": 355.0
+    },
+    "accuracy": 0.5984405458089669,
+    "macro avg": {
+      "precision": 0.6014213798493158,
+      "recall": 0.6022463310933879,
+      "f1-score": 0.6016842141408874,
+      "support": 1026.0
+    },
+    "weighted avg": {
+      "precision": 0.5981725925362162,
+      "recall": 0.5984405458089669,
+      "f1-score": 0.5981445120836837,
+      "support": 1026.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      175,
+      63,
+      40
+    ],
+    [
+      66,
+      218,
+      109
+    ],
+    [
+      36,
+      98,
+      221
+    ]
+  ],
+  "label_order": [
+    "positive",
+    "neutral",
+    "negative"
+  ]
+}

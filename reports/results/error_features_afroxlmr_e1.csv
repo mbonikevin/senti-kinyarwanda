@@ -1,0 +1,8 @@
+feature,n_with,err_with,err_without,lift
+has_question,180,0.3333,0.3168,1.05
+has_emoji,310,0.3129,0.3226,0.97
+very_short,84,0.2976,0.3217,0.93
+has_elongation,178,0.2809,0.3278,0.86
+mentions_only,29,0.2759,0.321,0.86
+has_url,303,0.2772,0.3375,0.82
+has_english,41,0.2439,0.3228,0.76

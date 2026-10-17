@@ -1,0 +1,2 @@
+exp_id,date,model,stage,change,hypothesis,learning_rate,epochs,max_len,batch_size,seed,val_macro_f1,val_weighted_f1,val_accuracy,train_seconds,decision,reason
+E5,2026-10-17,xlm-roberta-base,E5-xlmr-ablation,"plain XLM-RoBERTa-base in place of AfroXLMR-base, all else identical",AfroXLMR's African-language adaptive pretraining is worth a measurable amount of macro-F1,2e-05,3,128,16,42,0.5264,0.5304,0.532,648.7,,

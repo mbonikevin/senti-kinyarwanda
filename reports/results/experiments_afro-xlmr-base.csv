@@ -1,0 +1,8 @@
+exp_id,date,model,stage,change,hypothesis,learning_rate,epochs,max_len,batch_size,seed,val_macro_f1,val_weighted_f1,val_accuracy,train_seconds,decision,reason
+E1,2026-10-17,afro-xlmr-base,E1-afroxlmr-default,"AfroXLMR-base, lr 2e-5, 3 epochs, max_len 128, batch 16",A model with Kinyarwanda in its pretraining beats TF-IDF+LogReg on macro-F1,2e-05,3,128,16,42,0.6854,0.6819,0.682,266.4,,
+E2a,2026-10-17,afro-xlmr-base,E2a-lr1e-05,learning rate 1e-05 instead of 2e-5,2e-5 is the RoBERTa-family convention; 1e-5 may underfit in 3 epochs and 5e-5 may destabilise a 3.3k-example fine-tune,1e-05,3,128,16,42,0.6654,0.6643,0.6638,291.8,,
+E2b,2026-10-17,afro-xlmr-base,E2b-lr5e-05,learning rate 5e-05 instead of 2e-5,2e-5 is the RoBERTa-family convention; 1e-5 may underfit in 3 epochs and 5e-5 may destabilise a 3.3k-example fine-tune,5e-05,3,128,16,42,0.6711,0.6665,0.6663,321.0,,
+E3,2026-10-17,afro-xlmr-base,E3-5epochs,5 epochs instead of 3,3.3k examples is small; extra epochs will overfit rather than help,2e-05,5,128,16,42,0.6817,0.6784,0.6784,576.3,,
+E4,2026-10-17,afro-xlmr-base,E4-maxlen64,max_len 64 instead of 128,Truncating ~5% of tweets costs little and roughly halves training time,2e-05,3,64,16,42,0.6631,0.6593,0.659,364.6,,
+E6,2026-10-17,afro-xlmr-base,E6-heavy-cleaning,emoji stripped and elongated characters collapsed,"Emoji are often the only sentiment marker in a code-mixed tweet, so removing them should LOWER macro-F1",2e-05,3,128,16,42,0.6741,0.6716,0.6723,564.7,,
+E7,2026-10-17,afro-xlmr-base,E7-class-weighted,inverse-frequency class weights in the cross-entropy loss,Up-weighting the smaller positive class raises macro-F1 even if accuracy drops,2e-05,3,128,16,42,0.6869,0.6833,0.6844,576.2,,

@@ -6,7 +6,7 @@ compares simple word count models against a fine tuned transformer
 | | |
 |---|---|
 | live app | link |
-| model | link |
+| model | https://huggingface.co/mbonikevin/afroxlmr-kinyarwanda-sentiment |
 | demo video | link |
 
 ## why
@@ -54,7 +54,14 @@ look fine while a whole class is ignored
 | most common class | 0.1846 | 0.2122 | 0.3830 |
 | tfidf naive bayes | 0.5511 | 0.5532 | 0.5556 |
 | tfidf logreg | 0.6017 | 0.5981 | 0.5984 |
-| afroxlmr base | link | link | link |
+| **afroxlmr base** | **0.6841** | **0.6802** | **0.6803** |
+
+the 27 tweets shared between train and test barely matter scoring only the 999
+unseen rows gives 0.6804 macro f1
+
+e5 answers the question section 2 set up plain xlm r with an identical config
+scores 0.5264 on validation against 0.6854 for afroxlmr the tokenizers are the
+same so the 0.159 gap is the pretraining weights alone
 
 ## files
 
@@ -69,7 +76,8 @@ src/metrics.py              shared scoring
 src/experiment_log.py       one row per run
 src/viz.py                  charts
 notebooks/                  runs everything needs a gpu for training
-app/                        the web page
+streamlit_app.py            the web page
+app/                        the same app for gradio unused
 reports/                    charts and result files
 ```
 

@@ -1,0 +1,64 @@
+{
+  "model_name": "AfroXLMR (E1) clean",
+  "split": "test",
+  "accuracy": 0.6766766766766766,
+  "macro_f1": 0.680352617009873,
+  "macro_precision": 0.6803199592343875,
+  "macro_recall": 0.680681739069897,
+  "weighted_f1": 0.6765847914121693,
+  "per_class_report": {
+    "positive": {
+      "precision": 0.7195571955719557,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.7169117647058824,
+      "support": 273.0
+    },
+    "neutral": {
+      "precision": 0.6612903225806451,
+      "recall": 0.640625,
+      "f1-score": 0.6507936507936508,
+      "support": 384.0
+    },
+    "negative": {
+      "precision": 0.6601123595505618,
+      "recall": 0.6871345029239766,
+      "f1-score": 0.673352435530086,
+      "support": 342.0
+    },
+    "accuracy": 0.6766766766766766,
+    "macro avg": {
+      "precision": 0.6803199592343875,
+      "recall": 0.680681739069897,
+      "f1-score": 0.680352617009873,
+      "support": 999.0
+    },
+    "weighted avg": {
+      "precision": 0.6768098350634674,
+      "recall": 0.6766766766766766,
+      "f1-score": 0.6765847914121693,
+      "support": 999.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      195,
+      45,
+      33
+    ],
+    [
+      50,
+      246,
+      88
+    ],
+    [
+      26,
+      81,
+      235
+    ]
+  ],
+  "label_order": [
+    "positive",
+    "neutral",
+    "negative"
+  ]
+}

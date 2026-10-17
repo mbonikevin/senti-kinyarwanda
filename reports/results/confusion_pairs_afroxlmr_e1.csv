@@ -1,0 +1,7 @@
+true_label,pred_label,n,pct_of_errors
+neutral,negative,90,27.4
+negative,neutral,83,25.3
+neutral,positive,50,15.2
+positive,neutral,46,14.0
+positive,negative,33,10.1
+negative,positive,26,7.9
