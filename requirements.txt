@@ -14,4 +14,4 @@ sentencepiece
 protobuf
 
 # deployment only not needed to train
-gradio>=4.0
+streamlit>=1.37
