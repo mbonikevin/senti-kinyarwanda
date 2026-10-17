@@ -6,8 +6,6 @@ import urllib.request
 from pathlib import Path
 
 import pandas as pd
-
-# the hugging face copy needs a loader script which new datasets versions dropped
 GITHUB_BASE = ("https://raw.githubusercontent.com/afrisenti-semeval/"
                "afrisent-semeval-2023/main/data/kin")
 SPLIT_FILES = {"train": "train.tsv", "validation": "dev.tsv", "test": "test.tsv"}
@@ -78,7 +76,7 @@ def describe(splits):
     return pd.DataFrame(rows)
 
 def save_processed(splits):
-    """save the cleaned splits so later steps do not download again"""
+    """saving the cleaned splits so later steps do not download again"""
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     for split, df in splits.items():
         df.to_csv(PROCESSED_DIR / f"{split}.csv", index=False)
@@ -86,6 +84,6 @@ def save_processed(splits):
         json.dump(ID_TO_LABEL, f, indent=2)
 
 def load_processed():
-    """reads back whatever save_processed put on disk"""
+    """reads back whatever save_processed is going toput on disk"""
     return {s: pd.read_csv(PROCESSED_DIR / f"{s}.csv")
             for s in ("train", "validation", "test")}
