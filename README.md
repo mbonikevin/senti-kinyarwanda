@@ -77,7 +77,6 @@ src/experiment_log.py       one row per run
 src/viz.py                  charts
 notebooks/                  runs everything needs a gpu for training
 streamlit_app.py            the web page
-app/                        the same app for gradio unused
 reports/                    charts and result files
 ```
 

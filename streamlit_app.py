@@ -9,7 +9,7 @@ from src.data import clean_text, ID_TO_LABEL
 MODEL_ID = "mbonikevin/afroxlmr-kinyarwanda-sentiment"
 MAX_LEN = 128
 
-# the last two are known weak spots barely any text and a rhetorical question
+# the last two are the hard kind barely any text and a rhetorical question
 EXAMPLES = ["Murakoze cyane, ibi ni byiza cyane!",
             "Ibi ni bibi cyane, ntabwo nshimishijwe na gato.",
             "Inama izabera i Kigali ku wa gatatu.",
@@ -62,5 +62,5 @@ else:
 
 st.divider()
 st.caption("Neutral is the weakest class and neutral against negative is 53% of all "
-           "errors. Very short text and rhetorical questions are the known weak spots "
-           "— examples 4 and 5.")
+           "errors. The failures are semantic, not surface — questions, emoji, very "
+           "short text and code mixing all show no raised error rate.")

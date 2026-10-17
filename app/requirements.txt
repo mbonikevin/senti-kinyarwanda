@@ -1,7 +1,0 @@
-# for the hugging face space only
-gradio>=4.0
-transformers>=4.40,<5
-torch
-sentencepiece
-protobuf
-pandas
